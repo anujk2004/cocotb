@@ -1,0 +1,35 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2009.vpi";
+S_0x556cda16bdc0 .scope package, "$unit" "$unit" 2 1;
+ .timescale -9 -12;
+S_0x556cda16bf50 .scope module, "dut" "dut" 3 1;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+o0x7fbda348f018 .functor BUFZ 1, C4<z>; HiZ drive
+o0x7fbda348f048 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x556cda1b31c0 .functor AND 1, o0x7fbda348f018, o0x7fbda348f048, C4<1>, C4<1>;
+v0x556cda17dc30_0 .net "a", 0 0, o0x7fbda348f018;  0 drivers
+v0x556cda1b2fe0_0 .net "b", 0 0, o0x7fbda348f048;  0 drivers
+v0x556cda1b30a0_0 .net "y", 0 0, L_0x556cda1b31c0;  1 drivers
+    .scope S_0x556cda16bf50;
+T_0 ;
+    %vpi_call/w 3 7 "$dumpfile", "dut.vcd" {0 0 0};
+    %vpi_call/w 3 8 "$dumpvars" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "../xor_rtl/dut.v";

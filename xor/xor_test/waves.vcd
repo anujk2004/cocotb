@@ -1,0 +1,36 @@
+$date
+	Mon May 26 16:27:43 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module waves $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # y $end
+$scope module xor_rtl $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+0!
+$end
+#1000
+1#
+1"
+#2000
+0"
+1!
+#3000
+0#
+1"
+#4001

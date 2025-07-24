@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1751908504" />
+    <testcase name="andtest" classname="xor_test" file="/home/anuj/cocotb/xor/xor_test/xor_test.py" lineno="4" time="0.002160787582397461" sim_time_ns="4.001" ratio_time="1851.6396672183605" />
+  </testsuite>
+</testsuites>
