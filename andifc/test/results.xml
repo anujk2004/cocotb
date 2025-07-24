@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1753379254" />
+    <testcase name="andtest" classname="andtest" file="/home/anuj/cocotb/andifc/test/andtest.py" lineno="38" time="0.05883288383483887" sim_time_ns="2166.001" ratio_time="36816.16230271151" />
+  </testsuite>
+</testsuites>
